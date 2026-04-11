@@ -1,4 +1,5 @@
 import { Search, Bell } from "lucide-react";
+import logoSimbolo from "../assets/Logo-Simbolo.png";
 
 interface PageHeaderProps {
   title: string;
@@ -8,13 +9,19 @@ interface PageHeaderProps {
 export default function PageHeader({ title, subtitle }: PageHeaderProps) {
   return (
     <header className="flex items-center justify-between mb-8">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">{title}</h1>
-        <p className="text-sm text-muted-foreground">{subtitle}</p>
+      <div className="flex items-center gap-4">
+        <img src={logoSimbolo} alt="NetSecurity Logo" className="h-10 w-auto" />
+        <div>
+          <h1 className="text-2xl font-bold text-foreground">{title}</h1>
+          <p className="text-sm text-muted-foreground">{subtitle}</p>
+        </div>
       </div>
       <div className="flex items-center gap-4">
         <div className="relative">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          <Search
+            size={16}
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+          />
           <input
             type="text"
             placeholder="Buscar..."
