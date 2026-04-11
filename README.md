@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/logo-simbolo.png" alt="NetSecurity Logo" width="160" />
+ <img src="src/assets/Logo-Simbolo.png" alt="NetSecurity Logo" width="160" />
 </p>
 
 # NetSecurity
